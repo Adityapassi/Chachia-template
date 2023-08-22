@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Common Css */
+
+:root {
+  --base-color: #e7ceb1;
+}
+
+body {
+  background-color: #212126;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #bdbdbd;
+  margin: 15px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+}
+h2 {
+  font-size: 43px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h3 a {
+  font-family: "Abril Fatface", cursive;
+  transition: all 0.3s;
+}
+
+h3 a:hover {
+  color: var(--base-color);
+}
+
+.w25 {
+  width: 25%;
+  padding-right: 10px;
+  float: left;
+}
+
+.w75 {
+  width: 73%;
+  float: left;
+}
+
+.w33 {
+  width: 31%;
+  float: left;
+}
+
+.container {
+  width: 1100px;
+  display: flow-root;
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 130px 0 120px;
+}
+
+.btn {
+  font-size: 13px;
+  display: inline-block;
+  padding: 15px 27px;
+  background-color: var(--base-color);
+  color: #4f4f4f;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.back_position {
+  background-position: center !important;
+}
+
+/* Banner : START */
+
+#banner {
+  background: url(../images/banner.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+#logo {
+  float: left;
+  padding: 10px 0;
+}
+
+#logo a {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+
+#menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+#menu li a {
+  padding-bottom: 3px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.active,
+#menu li a:hover {
+  color: var(--base-color);
+}
+
+.banner-content {
+  padding-top: 300px;
+  padding-bottom: 160px;
+  max-width: 31%;
+}
+
+.banner-content span {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.banner-content h1 {
+  font-size: 90px;
+  line-height: 1.1;
+}
+
+.banner-content p {
+  color: #fff;
+  margin-top: 14px;
+}
+
+/* Albums */
+#feature_album {
+  padding: 140px 0 110px;
+  /* border: 1px solid ; */
+}
+
+.album_img img {
+  width: 100%;
+  display: block;
+  padding-bottom: 22px;
+}
+
+.album {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.album:last-child {
+  margin-right: 0px;
+}
+
+.album .buy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 3;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.album .buy:hover {
+  color: var(--base-color);
+}
+
+/* Featues : End */
+
+#next_event {
+  background: url(../images/bg2.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#next_event .btn {
+  margin-top: 30px;
+}
+
+.syotimer {
+  font-family: "Abril Fatface", cursive;
+  padding: 17px 0 10px;
+}
+
+.syotimer-cell__value {
+  font-size: 72px;
+  color: #fff;
+  /* height: 85px; */
+  line-height: 81px;
+  margin: 0 0 5px;
+}
+
+.syotimer-cell {
+  display: inline-block;
+  margin-right: 120px;
+  width: auto;
+  background: none;
+}
+
+.syotimer-cell:last-child {
+  margin-right: 0;
+}
+
+.syotimer-cell__unit {
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* Next Evebt : End  */
+
+#video_player {
+  float: left;
+  margin-left: 65px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.minimal:before {
+  border-radius: 0 !important;
+}
+
+.minimal__controls {
+  background: var(--base-color);
+}
+
+.minimal__button--big {
+  color: #000;
+  transition: all 0.3s;
+}
+
+.minimal__button {
+  color: #000;
+  transition: all 0.3s;
+}
+
+.minimal .progress__filled {
+  background: #000;
+}
+
+.minimal__button--big:hover,
+.minimal__button:hover {
+  color: #81868c;
+}
+
+/* Latest Video : End */
+
+#upcoming_tours {
+  background: url(../images/bg3.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+#upcoming_tours h2 {
+  padding-bottom: 10px;
+}
+
+#upcoming_tours .tour span {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+#upcoming_tours .tour .tour_img img {
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+}
+
+#upcoming_tours .tours .tour {
+  margin-right: 37px;
+}
+
+#upcoming_tours .tours .tour:last-child {
+  margin-right: 0;
+}
+
+/* Upcoming Tour : END */
+#popular_songs {
+  padding: 110px 0;
+}
+
+#popular_songs audio {
+  width: 100%;
+}
+
+.audioplayer {
+  text-shadow: none;
+  color: #000;
+  background: var(--base-color);
+  box-shadow: none;
+  margin: 5px 0;
+}
+
+.audioplayer-playpause {
+  color: #fff !important;
+  border: none !important;
+}
+
+.audioplayer-playpause a {
+  border-left-color: #000 !important;
+  transition: all 0.3s;
+}
+
+.audioplayer-playpause a:hover {
+  border-left-color: #7f878a !important ;
+}
+
+.audioplayer-time-current {
+  border: none;
+}
+
+.audioplayer-bar {
+  background: rgba(21, 21, 24, 0.25);
+  height: 5px;
+  margin-top: -3px;
+}
+
+.audioplayer-bar-loaded {
+  background-color: rgba(21, 21, 24, 0.25);
+}
+
+.audioplayer-bar-played {
+  background: #000 !important;
+}
+
+.audioplayer-volume {
+  /* color: #000 !important; */
+  border: none;
+}
+
+.audioplayer-volume-button a {
+  background-color: #000;
+}
+
+.audioplayer-volume-button a:before {
+  border-right-color: #000;
+}
+
+/* Popular Songs : End */
+
+#latest_news {
+  background: url(../images/bg4.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#latest_news h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#latest_news span {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+#latest_news .blogs .blog {
+  margin-right: 25px;
+}
+
+#latest_news .blogs .blog:last-child {
+  margin-right: 0;
+}
+
+/* Latest News : End */
+
+#get_in_touch h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contact_form {
+  width: 550px;
+  margin: 0 auto;
+}
+
+.contact_form span {
+  color: #bdbdbd;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 20px 40px 20px;
+  display: block;
+}
+
+textarea,
+.contact_form .form {
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  background-color: #000;
+  border: none;
+  margin-bottom: 5px;
+}
+
+textarea {
+  resize: none;
+}
+textarea:focus-visible,
+.contact_form .form:focus-visible {
+  outline: none;
+}
+
+textarea::placeholder,
+.contact_form .form::placeholder {
+  color: #fff;
+}
+.textarea {
+  height: 60px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center input {
+  margin-top: 20px;
+  border: none;
+}
+/* Contact :End */
+
+#footer {
+  background: #000;
+  padding: 30px 0;
+}
+
+#footer .copyright {
+  float: left;
+  color: #4f4f4f;
+  font-size: 14px;
+}
+
+.footer_social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.footer_social li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer_social li a {
+  color: #4f4f4f;
+  font-size: 14px;
+  padding: 0 5px;
+  transition: all 0.5s;
+}
+
+.footer_social li a:hover {
+  color: #bdbdbd;
+}
